@@ -22,7 +22,7 @@ function makeCalculator() {
     },
     divide(a) {
       if (a === 0) {
-        this.result /= Infinity;
+        this.result = 0;
       } else {
         this.result /= a;
       }
