@@ -23,8 +23,9 @@ function makeCalculator() {
     divide(a) {
       if (a === 0) {
         this.result /= Infinity;
+      } else {
+        this.result /= a;
       }
-      this.result /= a;
     },
     reset() {
       this.result = 0;
